@@ -17,10 +17,10 @@ use crate::char::constants::ALPHA;
 ///
 /// # Panics
 /// Panics if the characters are different.
-pub fn assert_eq_char(first_char: char, second_char: char) {
+pub fn assert_char_eq(first_char: char, second_char: char) {
     if first_char != second_char {
         panic!(
-            "assert_eq_char: '{}' is different from '{}'",
+            "assert_char_eq: '{}' is different from '{}'",
             first_char, second_char
         );
     }
@@ -33,10 +33,10 @@ pub fn assert_eq_char(first_char: char, second_char: char) {
 ///
 /// # Panics
 /// Panics if the character is not alphabetic.
-pub fn assert_is_alphabetic(a_char: char) {
+pub fn assert_char_is_alphabetic(a_char: char) {
     if !ALPHA.contains(&a_char) {
         panic!(
-            "assert_is_alphabetic: '{}' is not an alphabetic character",
+            "assert_char_is_alphabetic: '{}' is not an alphabetic character",
             a_char
         );
     }
