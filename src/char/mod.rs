@@ -8,4 +8,6 @@
 //!
 //! @author Ismael Gomes Moreira <ismaelmoreirakt@gmail.com>
 pub mod char;
+pub mod constants;
+
 pub use self::char::*;

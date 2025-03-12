@@ -14,7 +14,7 @@
 ///
 /// * `first_char` - The first character to compare.
 /// * `second_char` - The second character to compare.
-pub fn assert_eq_char(first_char: char, second_char: char) -> ! {
+pub fn assert_eq_char(first_char: char, second_char: char) {
     if first_char != second_char {
         panic!(
             "assert_eq_char: '{}' is different from '{}'",
