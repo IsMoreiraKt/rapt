@@ -466,7 +466,7 @@ safest to attach them to the start of each source file to most effectively
 convey the exclusion of warranty; and each file should have at least the
 "copyright" line and a pointer to where the full notice is found.
 
-    RTest. A rust test framework. 
+    RTAPT. A library of primary type assertions for the Rust language. 
     Copyright (C) 2025 Ismael Gomes Moreira
 
     This library is free software; you can redistribute it and/or

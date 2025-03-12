@@ -1,6 +1,28 @@
 [package]
-name = "rapt"
-version = "0.1.0"
-edition = "2021"
+name            = "rtapt"
+version         = "0.0.1"
+authors         = [ "Ismael Gomes Moreira <ismaelmoreirakt@gmail.com>" ]
+categories      = [ "assertions", "testing" ]
+keywords        = [ "assertions", "testing" ]
+description     = "rtapt provides over 750 assertion functions for Rust's primitive and standard types, ensuring robust and reliable testing."
+documentation   = "https://github.com/IsMoreiraKt/rtapt/README.md"
+readme          = "README.md"
+edition         = "2021"
+homepage        = "https://github.com/IsMoreiraKt/rtapt"
+license         = "LGPL-2.1-or-later"
+repository      = "https://github.com/IsMoreiraKt/rtapt"
+rust-version    = "1.65"
 
-[dependencies]
+[lib]
+name = "rtapt"
+path = "src/lib.rs"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+rustdoc-args = [
+    "--generate-link-to-definition",
+    "--extern-html-root-url=core=https://doc.rust-lang.org",
+    "--extern-html-root-url=alloc=https://doc.rust-lang.org",
+    "--extern-html-root-url=std=https://doc.rust-lang.org",
+    "--extern-html-root-url=proc_macro=https://doc.rust-lang.org",
+]

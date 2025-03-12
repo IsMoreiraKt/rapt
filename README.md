@@ -1,5 +1,5 @@
-# RAPT
-RAPT is a submodule of the [RTest](https://github.com/IsMoreiraKt/RTest) library.
+# rtapt
+rtapt is a submodule of the [RTest](https://github.com/IsMoreiraKt/RTest) library.
 
 It provides over 750 assertion functions for Rust's primitive and standard types, ensuring robust and reliable testing.
 
@@ -14,7 +14,7 @@ It provides over 750 assertion functions for Rust's primitive and standard types
 <br>
 
 ### Supported Types
-**RAPT** includes assertions for the following types:
+**rtapt** includes assertions for the following types:
 
 | Category                | Types                                                                                  |
 |-------------------------|----------------------------------------------------------------------------------------|
@@ -33,26 +33,26 @@ It provides over 750 assertion functions for Rust's primitive and standard types
 <br>
 
 ### Installation
-To use **RAPT**, install it via `Cargo`:
+To use **rtapt**, install it via `Cargo`:
 
 ```bash
-cargo add rapt
+cargo add rtapt
 ```
 
 Or add it as a dependency in your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rapt = "0.0.1"
+rtapt = "0.0.1"
 ```
 
 <br>
 
 ### Usage
-Here’s a basic example of using RAPT assertions:
+Here’s a basic example of using rtapt assertions:
 
 ```rust
-use rapt::assert_str_eq;
+use rtapt::assert_str_eq;
 
 fn main() {
     assert_str_eq!("Hello World", "Hello World"); // ok
@@ -63,7 +63,7 @@ fn main() {
 <br>
 
 ### Error Handling
-By default, **RAPT** assertions trigger a **panic** when they fail.
+By default, **rtapt** assertions trigger a **panic** when they fail.
 
 This ensures that failed tests do not continue execution.
 
@@ -72,7 +72,7 @@ Future updates may introduce alternative failure handling mechanisms.
 <br>
 
 ### Contribution
-Thank you for considering contributing to RAPT! Before getting started, please read the [LICENSE](./LICENSE) file.
+Thank you for considering contributing to rtapt! Before getting started, please read the [LICENSE](./LICENSE) file.
 
 The main repository includes a dedicated `dev-docs` directory, which contains:
 
