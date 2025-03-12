@@ -13,11 +13,11 @@ fn is_alphabetic(a_char: char) -> &'static str {
 }
 
 fn main() {
-    let valid_char = 'A';
-    println!("Checking if '{}' is an alphabetic character...", valid_char);
-    println!("{}", is_alphabetic(valid_char)); // The character 'A' is present in the alphabet.
+    let a_char = 'A';
+    println!("Checking if '{}' is an alphabetic character...", a_char);
+    println!("{}", is_alphabetic(a_char)); // The character 'A' is present in the alphabet.
 
-    let invalid_char = '1';
-    println!("Checking if '{}' is an alphabetic character...", invalid_char);
-    println!("{}", is_alphabetic(invalid_char)); // The character '1' does not exist in the alphabet.
+    a_char = '1';
+    println!("Checking if '{}' is an alphabetic character...", a_char);
+    println!("{}", is_alphabetic(a_char)); // The character '1' does not exist in the alphabet.
 }
