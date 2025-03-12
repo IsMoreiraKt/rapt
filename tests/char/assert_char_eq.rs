@@ -1,4 +1,4 @@
-use rtapt::char::assert_eq_char;
+use rtapt::char::assert_char_eq;
 use rtapt::char::constants::ALL_CHARACTERS;
 use std::panic;
 
@@ -7,7 +7,7 @@ mod char_tests {
     use super::*;
 
     #[test]
-    fn assert_eq_char_not_panic() {
+    fn assert_char_eq_not_panic() {
         let mut first_char: char;
         let mut second_char: char;
 
@@ -15,14 +15,14 @@ mod char_tests {
             first_char = ALL_CHARACTERS[iterator];
             second_char = ALL_CHARACTERS[iterator];
 
-            assert_eq_char(first_char, second_char);
+            assert_char_eq(first_char, second_char);
         }
     }
 
     #[test]
-    fn assert_eq_char_panic() {
+    fn assert_char_eq_panic() {
         let result = panic::catch_unwind(|| {
-            assert_eq_char('A', 'đ');
+            assert_char_eq('A', 'đ');
         });
 
         if result.is_ok() {
