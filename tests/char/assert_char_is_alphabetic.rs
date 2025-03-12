@@ -8,12 +8,8 @@ mod char_tests {
 
     #[test]
     fn assert_char_is_alphabetic_not_panic() {
-        let mut a_char: char;
-
-        for iterator in 0..ALPHA.len() {
-            a_char = ALPHA[iterator];
-
-            assert_char_is_alphabetic(a_char);
+        for &first_char in &ALPHA {
+            assert_char_is_alphabetic(first_char);
         }
     }
 
