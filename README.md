@@ -52,7 +52,7 @@ rtapt = "0.0.1"
 Here’s a basic example of using rtapt assertions:
 
 ```rust
-use rtapt::assert_str_eq;
+use rtapt::str::assert_str_eq;
 
 fn main() {
     assert_str_eq!("Hello World", "Hello World"); // ok
