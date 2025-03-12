@@ -1,9 +1,9 @@
-use rtapt::char::assert_eq_char;
+use rtapt::char::assert_char_eq;
 use std::panic;
 
 fn compare_chars(first_char: char, second_char: char) -> &'static str {
     let result = panic::catch_unwind(|| {
-        assert_eq_char(first_char, second_char);
+        assert_char_eq(first_char, second_char);
     });
 
     if result.is_ok() {

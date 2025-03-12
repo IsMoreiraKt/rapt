@@ -20,11 +20,11 @@ mod char_tests {
     #[test]
     fn assert_char_is_alphabetic_panic() {
         let result = panic::catch_unwind(|| {
-            assert_is_alphabetic('0');
+            assert_char_is_alphabetic('0');
         });
 
         if result.is_ok() {
-            panic!("assert_is_alphabetic_panic: Expected panic, but it did not occur!");
+            panic!("assert_char_is_alphabetic_panic: Expected panic, but it did not occur!");
         }
     }
 }

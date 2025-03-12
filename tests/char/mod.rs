@@ -1,2 +1,2 @@
-pub mod assert_eq_char;
-pub mod assert_is_alphabetic;
+pub mod assert_char_eq;
+pub mod assert_char_is_alphabetic;
