@@ -1,4 +1,5 @@
 use rtapt::char::assert_char_is_alphabetic;
+use std::panic;
 
 fn is_alphabetic(a_char: char) -> &'static str {
     let result = std::panic::catch_unwind(|| {

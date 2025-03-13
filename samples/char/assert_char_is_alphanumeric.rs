@@ -1,4 +1,5 @@
 use rtapt::char::assert_char_is_alphanumeric;
+use std::panic;
 
 fn is_alphanumeric(a_char: char) -> String {
     let result = std::panic::catch_unwind(|| {
