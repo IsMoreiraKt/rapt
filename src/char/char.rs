@@ -60,3 +60,22 @@ pub fn assert_char_is_alphanumeric(a_char: char) {
         );
     }
 }
+
+/// Verifies if a character is an ASCII character. Panics if it is not.
+///
+/// This function checks whether a given character belongs to the ASCII character set
+/// (values from 0 to 127). If the character is outside this range, it panics.
+///
+/// # Arguments
+/// * `a_char` - The character to check.
+///
+/// # Panics
+/// Panics if the character is not an ASCII character.
+pub fn assert_char_is_ascii(a_char: char) {
+    if !ASCII.contains(&a_char) {
+        panic!(
+            "assert_char_is_ascii: '{}' is not an ASCII character.",
+            a_char
+        );
+    }
+}
